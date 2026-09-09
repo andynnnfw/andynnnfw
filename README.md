@@ -38,7 +38,7 @@
 
 > Replace the links below with your real repository URLs.
 
-- 🎬 **[CineDesk](https://github.com/SEU_USUARIO/cinedesk)** — A desktop management system built in **Java (Java Swing)** for a Software Development course, handling movie sessions, tickets, products, stock, employees, and clients through a relational database, with dedicated report modules for sales, sessions, inventory, and customers.
+- 🎬 **[CineDesk](https://github.com/andynnfw/cinedesk)** — A desktop management system built in **Java (Java Swing)** for a Software Development course, handling movie sessions, tickets, products, stock, employees, and clients through a relational database, with dedicated report modules for sales, sessions, inventory, and customers.
 
 <!--
 Once you send me your GitHub link, I'll analyze your public repositories
@@ -51,16 +51,16 @@ and tech stacks.
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=SEU_USUARIO&show_icons=true&theme=tokyonight&count_private=true"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SEU_USUARIO&layout=compact&theme=tokyonight"/>
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=andynnfw&show_icons=true&theme=tokyonight&count_private=true"/>
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=andynnfw&layout=compact&theme=tokyonight"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=SEU_USUARIO&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+  <img src="https://streak-stats.demolab.com/?user=andynnfw&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SEU_USUARIO&theme=tokyo-night&hide_border=true" alt="Contribution Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=andynnfw&theme=tokyo-night&hide_border=true" alt="Contribution Graph"/>
 </p>
 
 ---
