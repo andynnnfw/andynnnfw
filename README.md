@@ -80,7 +80,7 @@ https://github.com/andynnnfw/product-registration-dashboard-PHP
 ### 🔥 Contribution Streak
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=andynnnfw&theme=tokyonight&hide_border=true" alt="GitHub Contribution Streak" />
+  <img src="https://streak-stats.demolab.com/?user=andynnnfw&theme=tokyonight&hide_border=true&timezone=America/Sao_Paulo" alt="GitHub Contribution Streak" />
 </p>
 
 ---
