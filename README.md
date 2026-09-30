@@ -37,43 +37,64 @@
 
 ### 📌 Featured Projects
 
-#### 🎬 CineDesk
+#### 🔐 Spring Boot REST API with JWT
 
-A desktop management system developed in **Java and Java Swing** for a Software Development course.
+A RESTful product API built with **Java and Spring Boot**, persisting data in **PostgreSQL** through Spring Data JPA and Hibernate. Endpoints are protected with **Spring Security and JWT authentication**, passwords are hashed with BCrypt, and errors are handled by a global exception handler.
 
-The system manages movie sessions, tickets, products, inventory, employees and customers through a relational database. It also includes reporting modules for sales, sessions, inventory and customers.
+**Stack:** Java · Spring Boot · Spring Security · JWT · PostgreSQL · JPA/Hibernate
 
-🔗 **Repository:**  
-https://github.com/andynnnfw/cinedesk
-
----
-
-#### 🧮 Basal Metabolic Rate Calculator
-
-A desktop application developed with **Java and Java Swing** that calculates the user's estimated Basal Metabolic Rate (BMR/TMB) based on information such as weight, height, age and gender.
-
-The project was created to practice **Object-Oriented Programming, Java Swing, validation and desktop application development**.
-
-🔗 **Repository:**  
-https://github.com/andynnnfw/basalMetabolicRate-JAVA
+🔗 https://github.com/andynnnfw/spring-rest-api-postgres
 
 ---
 
-#### 🔐 Sistema de Login
+#### 🌐 WordFrame — Chrome Extension
 
-A login system developed as a practical project, focusing on authentication concepts, user interfaces and application logic.
+A **Google Chrome extension (Manifest V3)** for learning English while browsing. It translates selected text directly on the page with a keyboard shortcut, saves vocabulary as flashcards with a review mode, keeps a translation history and records clips from videos playing in the tab.
 
-🔗 **Repository:**  
-https://github.com/andynnnfw/SistemaLogin-PAM
+**Stack:** JavaScript · Chrome Extensions API · MediaRecorder API · HTML · CSS
+
+🔗 https://github.com/andynnnfw/wordframe-chrome-extension
 
 ---
 
 #### 📦 Product Registration Dashboard
 
-A web-based product registration system developed with **PHP**, focused on product management and database integration.
+A dark-themed product management dashboard built with **PHP and MySQL**. It supports product registration with multiple image uploads, live thumbnail previews and a gallery rendered from the database, using **PDO with prepared statements** to prevent SQL injection.
 
-🔗 **Repository:**  
-https://github.com/andynnnfw/product-registration-dashboard-PHP
+**Stack:** PHP · MySQL · PDO · JavaScript · HTML · CSS
+
+🔗 https://github.com/andynnnfw/product-registration-dashboard-PHP
+
+---
+
+#### 🚗 Vehicle Rental System
+
+A command-line rental management system in **Java** for registering, renting and returning cars and motorcycles. Built to consolidate **OOP fundamentals**: abstract classes, interfaces, polymorphism, custom exceptions and collections.
+
+**Stack:** Java · OOP · Collections
+
+🔗 https://github.com/andynnnfw/vehicle-rental-system
+
+---
+
+#### 🧮 Basal Metabolic Rate Calculator — Desktop & Android
+
+The same BMR calculator built for two platforms: a **Java Swing** desktop application packaged as a Windows executable with JPackage, and a native **Android** app written in Java.
+
+**Stack:** Java · Java Swing · Android
+
+🔗 Desktop: https://github.com/andynnnfw/basalMetabolicRate-JAVA  
+🔗 Android: https://github.com/andynnnfw/basal-metabolic-rate-app
+
+---
+
+#### 📱 Android Login App
+
+An **Android** application in Java with sign-up, login, a "remember me" option and a logged-in home screen, persisting user data locally with `SharedPreferences`.
+
+**Stack:** Java · Android · SharedPreferences
+
+🔗 https://github.com/andynnnfw/SistemaLogin-PAM
 
 ---
 
