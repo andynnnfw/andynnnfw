@@ -1,129 +1,208 @@
-<h1 align="center">Hi there 👋, I'm Anderson Melo do Nascimento</h1>
+<div align="center">
 
-<h3 align="center">Aspiring Junior Developer | IT Student at Etec Uripuru</h3>
+<img src="assets/header.svg" width="100%" alt="Anderson Melo — IT Student and aspiring Java back-end developer"/>
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Studying+Software+Development;Learning+Java+%7C+PHP+%7C+JavaScript;Building+Projects+and+Learning+Every+Day;Looking+for+my+first+Junior+Dev+opportunity" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=A78BFA&center=true&vCenter=true&width=620&lines=Aspiring+Java+Back-end+Developer;Building+REST+APIs+with+Spring+Boot;A+new+portfolio+project+every+month;Open+to+internships+and+junior+roles" alt="Typing SVG"/>
+
+<p>
+  <a href="https://www.linkedin.com/in/SEU-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:SEU-EMAIL@gmail.com"><img src="https://img.shields.io/badge/E--mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail"/></a>
+  <img src="https://img.shields.io/badge/Open%20to-Internship%20%7C%20Junior-22c55e?style=for-the-badge" alt="Open to internship or junior roles"/>
 </p>
 
----
+</div>
 
-### 👨‍💻 About Me
+## 👨‍💻 About me
 
-- 🎓 I'm a student at **Etec Uripuru**, focused on Software Development.
-- 💻 I'm currently building solid foundations in **Java, PHP, JavaScript, HTML and CSS**.
-- 🚀 I'm looking to break into the **IT field** and land my **first Junior Developer position**.
-- 📚 I'm currently studying **Object-Oriented Programming, databases, software development and web technologies**.
-- 🎯 My goal is to continuously improve my skills and build a strong portfolio.
-- ⚡ Fun fact: I believe every bug fixed is a lesson learned.
+I'm an IT student at **Etec Uirapuru** (Centro Paula Souza) and an aspiring back-end developer focused on **Java, Spring Boot and relational databases**. I learn best by building real projects — from desktop to mobile, from REST APIs to browser extensions.
 
----
+<table>
+  <tr>
+    <td>🔭 <b>Currently</b></td>
+    <td>Building REST APIs with Spring Boot + PostgreSQL</td>
+  </tr>
+  <tr>
+    <td>🌱 <b>Learning</b></td>
+    <td>CI&amp;T Bootcamp – Java AI Copilot (DIO)</td>
+  </tr>
+  <tr>
+    <td>🎓 <b>Education</b></td>
+    <td>IT Student @ Etec Uirapuru — Centro Paula Souza</td>
+  </tr>
+  <tr>
+    <td>📍 <b>Location</b></td>
+    <td>São Paulo, Brazil</td>
+  </tr>
+  <tr>
+    <td>💼 <b>Looking for</b></td>
+    <td>My first opportunity: <b>Internship or Junior Developer</b></td>
+  </tr>
+</table>
 
-### 🛠️ Tech Stack
+<details>
+<summary><b>☕ Prefer reading it in Java? Click here</b></summary>
 
-#### 💻 Languages & Web
+```java
+public class Anderson implements Developer {
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=java,php,js,html,css" />
-</p>
+    @Override
+    public String focus() {
+        return "Back-end with Java & Spring Boot";
+    }
 
-#### 🔧 Tools & Databases
+    @Override
+    public List<String> stack() {
+        return List.of("Java", "Spring Boot", "PostgreSQL", "MySQL", "PHP");
+    }
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,idea,androidstudio,mysql,sqlite" />
-</p>
+    @Override
+    public List<String> learning() {
+        return List.of("REST APIs", "AI-assisted development", "Advanced English");
+    }
 
----
+    @Override
+    public boolean isOpenToWork() {
+        return true; // 🚀 Internship or Junior Developer
+    }
+}
+```
 
-### 📌 Featured Projects
+</details>
 
-#### 🔐 Spring Boot REST API with JWT
+## 🎯 What I bring to the team
 
-A RESTful product API built with **Java and Spring Boot**, persisting data in **PostgreSQL** through Spring Data JPA and Hibernate. Endpoints are protected with **Spring Security and JWT authentication**, passwords are hashed with BCrypt, and errors are handled by a global exception handler.
+- 🧱 **Hands-on Java & OOP fundamentals** — projects organized in layers (`model`, `view`, `util`)
+- 🌿 **Git as a daily habit** — feature branches (`feat/...`) and a clean history
+- 🔁 **Consistency** — personal challenge to ship **a new portfolio project every month**
+- 🤖 **AI as a tool, not a crutch** — I write my own code and use AI to review it and move faster
+- 🌎 **English improving every day** — I even built a Chrome extension for it ([Wordframe](https://github.com/andynnfw/wordframe-chrome-extension))
 
-**Stack:** Java · Spring Boot · Spring Security · JWT · PostgreSQL · JPA/Hibernate
+## 🧰 Tech Stack
 
-🔗 https://github.com/andynnnfw/spring-rest-api-postgres
+<table>
+  <tr>
+    <td><b>Back-end</b></td>
+    <td>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" height="40" alt="Java" title="Java"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" height="40" alt="Spring Boot" title="Spring Boot"/>&nbsp;
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Webysther_20160423_-_Elephpant.svg" height="40" alt="PHP" title="PHP"/>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Databases</b></td>
+    <td>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" height="40" alt="MySQL" title="MySQL"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" height="40" alt="PostgreSQL" title="PostgreSQL"/>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Front-end</b></td>
+    <td>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" height="40" alt="HTML5" title="HTML5"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" height="40" alt="CSS3" title="CSS3"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" height="40" alt="JavaScript" title="JavaScript"/>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Tools</b></td>
+    <td>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" height="40" alt="Git" title="Git"/>&nbsp;
+      <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" height="40" alt="GitHub" title="GitHub"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" height="40" alt="Notion" title="Notion"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" height="40" alt="Figma" title="Figma"/>&nbsp;
+      <img src="https://raw.githubusercontent.com/mysql/mysql-workbench/8.0/images/icons/MySQLWorkbench-128.png" height="40" alt="MySQL Workbench" title="MySQL Workbench"/>
+    </td>
+  </tr>
+  <tr>
+    <td><b>IDEs</b></td>
+    <td>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" height="40" alt="IntelliJ IDEA" title="IntelliJ IDEA"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" height="40" alt="VS Code" title="VS Code"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" height="40" alt="Android Studio" title="Android Studio"/>
+    </td>
+  </tr>
+</table>
 
----
+## 🚀 Featured Projects
 
-#### 🌐 WordFrame — Chrome Extension
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔤 <a href="https://github.com/andynnfw/wordframe-chrome-extension">Wordframe</a></h3>
+      <p>Chrome extension that supercharges English learning: translates words and phrases with a keyboard shortcut, saves vocabulary as flashcards and records video clips right from the page.</p>
+      <p>
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Chrome_Extension-4285F4?style=flat-square&logo=googlechrome&logoColor=white"/>
+        <img src="https://img.shields.io/badge/MediaRecorder_API-7c3aed?style=flat-square"/>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🌱 <a href="https://github.com/andynnfw/spring-rest-api-postgres">Spring REST API</a></h3>
+      <p>REST API built with Spring Boot and a PostgreSQL database.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📦 <a href="https://github.com/andynnfw/product-registration-dashboard-PHP">Product Registration Dashboard</a></h3>
+      <p>Product registration dashboard built with PHP.</p>
+      <p>
+        <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Dashboard-7c3aed?style=flat-square"/>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🔐 <a href="https://github.com/andynnfw/SistemaLogin-PAM">Login System</a></h3>
+      <p>Login system built with Java.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Authentication-7c3aed?style=flat-square"/>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <h3>🔥 Basal Metabolic Rate — from desktop to mobile</h3>
+      <p>A Basal Metabolic Rate calculator that started as a desktop app and grew into a mobile app. The desktop version features input validation, a layered architecture (<code>model</code>, <code>view</code>, <code>util</code>) and ships as a <code>.exe</code> executable via jpackage; the Android version brings the same logic to your phone.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Java_Swing-5382A1?style=flat-square"/>
+        <img src="https://img.shields.io/badge/jpackage-7c3aed?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"/>
+      </p>
+      <p>
+        🖥️ <a href="https://github.com/andynnfw/basalMetabolicRate-JAVA"><b>Desktop version</b></a> &nbsp;•&nbsp;
+        📱 <a href="https://github.com/andynnfw/basal-metabolic-rate-app"><b>Android version</b></a>
+      </p>
+    </td>
+  </tr>
+</table>
 
-A **Google Chrome extension (Manifest V3)** for learning English while browsing. It translates selected text directly on the page with a keyboard shortcut, saves vocabulary as flashcards with a review mode, keeps a translation history and records clips from videos playing in the tab.
+## 📊 GitHub Stats
 
-**Stack:** JavaScript · Chrome Extensions API · MediaRecorder API · HTML · CSS
+<div align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=andynnfw&show_icons=true&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa&text_color=c9d1d9&rank_icon=github" alt="GitHub Stats"/>
+  <img height="170" src="https://streak-stats.demolab.com?user=andynnfw&hide_border=true&background=0d1117&ring=a78bfa&fire=a78bfa&currStreakLabel=a78bfa&sideLabels=c9d1d9&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff" alt="GitHub Streak"/>
+</div>
 
-🔗 https://github.com/andynnnfw/wordframe-chrome-extension
+<br/>
 
----
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/andynnfw/andynnfw/output/github-snake-dark.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/andynnfw/andynnfw/output/github-snake.svg"/>
+    <img alt="Snake eating my contributions" src="https://raw.githubusercontent.com/andynnfw/andynnfw/output/github-snake.svg"/>
+  </picture>
+</div>
 
-#### 📦 Product Registration Dashboard
+<div align="center">
 
-A dark-themed product management dashboard built with **PHP and MySQL**. It supports product registration with multiple image uploads, live thumbnail previews and a gallery rendered from the database, using **PDO with prepared statements** to prevent SQL injection.
+### 💬 Let's connect — find me on LinkedIn!
 
-**Stack:** PHP · MySQL · PDO · JavaScript · HTML · CSS
+<img src="assets/footer.svg" width="100%" alt=""/>
 
-🔗 https://github.com/andynnnfw/product-registration-dashboard-PHP
-
----
-
-#### 🚗 Vehicle Rental System
-
-A command-line rental management system in **Java** for registering, renting and returning cars and motorcycles. Built to consolidate **OOP fundamentals**: abstract classes, interfaces, polymorphism, custom exceptions and collections.
-
-**Stack:** Java · OOP · Collections
-
-🔗 https://github.com/andynnnfw/vehicle-rental-system
-
----
-
-#### 🧮 Basal Metabolic Rate Calculator — Desktop & Android
-
-The same BMR calculator built for two platforms: a **Java Swing** desktop application packaged as a Windows executable with JPackage, and a native **Android** app written in Java.
-
-**Stack:** Java · Java Swing · Android
-
-🔗 Desktop: https://github.com/andynnnfw/basalMetabolicRate-JAVA  
-🔗 Android: https://github.com/andynnnfw/basal-metabolic-rate-app
-
----
-
-#### 📱 Android Login App
-
-An **Android** application in Java with sign-up, login, a "remember me" option and a logged-in home screen, persisting user data locally with `SharedPreferences`.
-
-**Stack:** Java · Android · SharedPreferences
-
-🔗 https://github.com/andynnnfw/SistemaLogin-PAM
-
----
-
-### 🔥 Contribution Streak
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=andynnnfw&theme=tokyonight&hide_border=true&timezone=America/Sao_Paulo" alt="GitHub Contribution Streak" />
-</p>
-
----
-
-### 📫 Let's Connect
-
-<p align="left">
-  <a href="mailto:and345melo@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-
-  <a href="https://www.linkedin.com/in/andynnnfw">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-
-  <a href="https://github.com/andynnnfw">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</p>
-
----
-
-<p align="center">
-  <i>Open to Junior Developer opportunities — always eager to learn, build and grow.</i>
-</p>
+</div>
