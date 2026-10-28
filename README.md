@@ -5,7 +5,7 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=A78BFA&center=true&vCenter=true&width=620&lines=Aspiring+Java+Back-end+Developer;Building+REST+APIs+with+Spring+Boot;A+new+portfolio+project+every+month;Open+to+internships+and+junior+roles" alt="Typing SVG"/>
 
 <p>
-  <a href="https://www.linkedin.com/in/andynnnfw/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://www.linkedin.com/in/SEU-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:SEU-EMAIL@gmail.com"><img src="https://img.shields.io/badge/E--mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail"/></a>
   <img src="https://img.shields.io/badge/Open%20to-Internship%20%7C%20Junior-22c55e?style=for-the-badge" alt="Open to internship or junior roles"/>
 </p>
@@ -83,42 +83,42 @@ public class Anderson implements Developer {
   <tr>
     <td><b>Back-end</b></td>
     <td>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" height="40" alt="Java" title="Java"/>&nbsp;
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" height="40" alt="Spring Boot" title="Spring Boot"/>&nbsp;
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Webysther_20160423_-_Elephpant.svg" height="40" alt="PHP" title="PHP"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="40" height="40" alt="Java" title="Java"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" width="40" height="40" alt="Spring Boot" title="Spring Boot"/>&nbsp;
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Webysther_20160423_-_Elephpant.svg" width="60" height="40" alt="PHP" title="PHP"/>
     </td>
   </tr>
   <tr>
     <td><b>Databases</b></td>
     <td>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" height="40" alt="MySQL" title="MySQL"/>&nbsp;
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" height="40" alt="PostgreSQL" title="PostgreSQL"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" width="40" height="40" alt="MySQL" title="MySQL"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="40" height="40" alt="PostgreSQL" title="PostgreSQL"/>
     </td>
   </tr>
   <tr>
     <td><b>Front-end</b></td>
     <td>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" height="40" alt="HTML5" title="HTML5"/>&nbsp;
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" height="40" alt="CSS3" title="CSS3"/>&nbsp;
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" height="40" alt="JavaScript" title="JavaScript"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5" title="HTML5"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="40" height="40" alt="CSS3" title="CSS3"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript" title="JavaScript"/>
     </td>
   </tr>
   <tr>
     <td><b>Tools</b></td>
     <td>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" height="40" alt="Git" title="Git"/>&nbsp;
-      <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" height="40" alt="GitHub" title="GitHub"/>&nbsp;
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" height="40" alt="Notion" title="Notion"/>&nbsp;
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" height="40" alt="Figma" title="Figma"/>&nbsp;
-      <img src="https://raw.githubusercontent.com/mysql/mysql-workbench/8.0/images/icons/MySQLWorkbench-128.png" height="40" alt="MySQL Workbench" title="MySQL Workbench"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="40" height="40" alt="Git" title="Git"/>&nbsp;
+      <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" width="40" height="40" alt="GitHub" title="GitHub"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" width="40" height="40" alt="Notion" title="Notion"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" width="40" height="40" alt="Figma" title="Figma"/>&nbsp;
+      <img src="https://raw.githubusercontent.com/mysql/mysql-workbench/8.0/images/icons/MySQLWorkbench-128.png" width="40" height="40" alt="MySQL Workbench" title="MySQL Workbench"/>
     </td>
   </tr>
   <tr>
     <td><b>IDEs</b></td>
     <td>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" height="40" alt="IntelliJ IDEA" title="IntelliJ IDEA"/>&nbsp;
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" height="40" alt="VS Code" title="VS Code"/>&nbsp;
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" height="40" alt="Android Studio" title="Android Studio"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" width="40" height="40" alt="IntelliJ IDEA" title="IntelliJ IDEA"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="40" height="40" alt="VS Code" title="VS Code"/>&nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" width="40" height="40" alt="Android Studio" title="Android Studio"/>
     </td>
   </tr>
 </table>
