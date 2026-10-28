@@ -5,7 +5,7 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=A78BFA&center=true&vCenter=true&width=620&lines=Aspiring+Java+Back-end+Developer;Building+REST+APIs+with+Spring+Boot;A+new+portfolio+project+every+month;Open+to+internships+and+junior+roles" alt="Typing SVG"/>
 
 <p>
-  <a href="https://www.linkedin.com/in/SEU-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://www.linkedin.com/in/andynnnfw/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:SEU-EMAIL@gmail.com"><img src="https://img.shields.io/badge/E--mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail"/></a>
   <img src="https://img.shields.io/badge/Open%20to-Internship%20%7C%20Junior-22c55e?style=for-the-badge" alt="Open to internship or junior roles"/>
 </p>
