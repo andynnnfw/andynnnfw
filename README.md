@@ -5,8 +5,8 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=A78BFA&center=true&vCenter=true&width=620&lines=Aspiring+Java+Back-end+Developer;Building+REST+APIs+with+Spring+Boot;A+new+portfolio+project+every+month;Open+to+internships+and+junior+roles" alt="Typing SVG"/>
 
 <p>
-  <a href="https://www.linkedin.com/in/SEU-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:SEU-EMAIL@gmail.com"><img src="https://img.shields.io/badge/E--mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail"/></a>
+  <a href="https://www.linkedin.com/in/andynnnfw/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:and345melo@gmail.com"><img src="https://img.shields.io/badge/E--mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail"/></a>
   <img src="https://img.shields.io/badge/Open%20to-Internship%20%7C%20Junior-22c55e?style=for-the-badge" alt="Open to internship or junior roles"/>
 </p>
 
@@ -75,7 +75,7 @@ public class Anderson implements Developer {
 - 🌿 **Git as a daily habit** — feature branches (`feat/...`) and a clean history
 - 🔁 **Consistency** — personal challenge to ship **a new portfolio project every month**
 - 🤖 **AI as a tool, not a crutch** — I write my own code and use AI to review it and move faster
-- 🌎 **English improving every day** — I even built a Chrome extension for it ([Wordframe](https://github.com/andynnfw/wordframe-chrome-extension))
+- 🌎 **English improving every day** — I even built a Chrome extension for it ([Wordframe](https://github.com/andynnnfw/wordframe-chrome-extension))
 
 ## 🧰 Tech Stack
 
@@ -128,39 +128,45 @@ public class Anderson implements Developer {
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🔤 <a href="https://github.com/andynnfw/wordframe-chrome-extension">Wordframe</a></h3>
-      <p>Chrome extension that supercharges English learning: translates words and phrases with a keyboard shortcut, saves vocabulary as flashcards and records video clips right from the page.</p>
+      <h3>🛡️ <a href="https://github.com/andynnnfw/spring-rest-api-postgres">Product API</a></h3>
+      <p>REST API for product management secured with <b>JWT authentication</b> (Spring Security + BCrypt password hashing) and persisted in <b>PostgreSQL</b> through Spring Data JPA / Hibernate.</p>
       <p>
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-        <img src="https://img.shields.io/badge/Chrome_Extension-4285F4?style=flat-square&logo=googlechrome&logoColor=white"/>
-        <img src="https://img.shields.io/badge/MediaRecorder_API-7c3aed?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Java_21-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/>
+        <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white"/>
+        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>🌱 <a href="https://github.com/andynnfw/spring-rest-api-postgres">Spring REST API</a></h3>
-      <p>REST API built with Spring Boot and a PostgreSQL database.</p>
+      <h3>🔤 <a href="https://github.com/andynnnfw/wordframe-chrome-extension">Wordframe</a></h3>
+      <p>Chrome extension that translates English words and phrases right on the page with a keyboard shortcut, saves vocabulary as flashcards and records video clips for study.</p>
       <p>
-        <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
-        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Chrome_Extension-4285F4?style=flat-square&logo=googlechrome&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Manifest_V3-7c3aed?style=flat-square"/>
+        <img src="https://img.shields.io/badge/MediaRecorder_API-7c3aed?style=flat-square"/>
       </p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>📦 <a href="https://github.com/andynnfw/product-registration-dashboard-PHP">Product Registration Dashboard</a></h3>
-      <p>Product registration dashboard built with PHP.</p>
+      <h3>📦 <a href="https://github.com/andynnnfw/product-registration-dashboard-PHP">Product Registration Dashboard</a></h3>
+      <p>Dark-themed dashboard for registering products with multiple image uploads, live thumbnail previews and a dynamic gallery rendered from the database. Uses PDO prepared statements to prevent SQL injection.</p>
       <p>
         <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Dashboard-7c3aed?style=flat-square"/>
+        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+        <img src="https://img.shields.io/badge/PDO-7c3aed?style=flat-square"/>
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>🔐 <a href="https://github.com/andynnfw/SistemaLogin-PAM">Login System</a></h3>
-      <p>Login system built with Java.</p>
+      <h3>🔐 <a href="https://github.com/andynnnfw/SistemaLogin-PAM">Android Login App</a></h3>
+      <p>Android app with sign-up, login and a personalized home screen, including field validation, a “remember me” option and logout, with data stored locally using SharedPreferences.</p>
       <p>
         <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Authentication-7c3aed?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"/>
+        <img src="https://img.shields.io/badge/SharedPreferences-7c3aed?style=flat-square"/>
       </p>
     </td>
   </tr>
@@ -175,8 +181,8 @@ public class Anderson implements Developer {
         <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"/>
       </p>
       <p>
-        🖥️ <a href="https://github.com/andynnfw/basalMetabolicRate-JAVA"><b>Desktop version</b></a> &nbsp;•&nbsp;
-        📱 <a href="https://github.com/andynnfw/basal-metabolic-rate-app"><b>Android version</b></a>
+        🖥️ <a href="https://github.com/andynnnfw/basalMetabolicRate-JAVA"><b>Desktop version</b></a> &nbsp;•&nbsp;
+        📱 <a href="https://github.com/andynnnfw/basal-metabolic-rate-app"><b>Android version</b></a>
       </p>
     </td>
   </tr>
@@ -185,17 +191,17 @@ public class Anderson implements Developer {
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=andynnfw&show_icons=true&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa&text_color=c9d1d9&rank_icon=github" alt="GitHub Stats"/>
-  <img height="170" src="https://streak-stats.demolab.com?user=andynnfw&hide_border=true&background=0d1117&ring=a78bfa&fire=a78bfa&currStreakLabel=a78bfa&sideLabels=c9d1d9&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff" alt="GitHub Streak"/>
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=andynnnfw&show_icons=true&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa&text_color=c9d1d9&rank_icon=github" alt="GitHub Stats"/>
+  <img height="170" src="https://streak-stats.demolab.com?user=andynnnfw&hide_border=true&background=0d1117&ring=a78bfa&fire=a78bfa&currStreakLabel=a78bfa&sideLabels=c9d1d9&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff" alt="GitHub Streak"/>
 </div>
 
 <br/>
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/andynnfw/andynnfw/output/github-snake-dark.svg"/>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/andynnfw/andynnfw/output/github-snake.svg"/>
-    <img alt="Snake eating my contributions" src="https://raw.githubusercontent.com/andynnfw/andynnfw/output/github-snake.svg"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/andynnnfw/andynnnfw/output/github-snake-dark.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/andynnnfw/andynnnfw/output/github-snake.svg"/>
+    <img alt="Snake eating my contributions" src="https://raw.githubusercontent.com/andynnnfw/andynnnfw/output/github-snake.svg"/>
   </picture>
 </div>
 
