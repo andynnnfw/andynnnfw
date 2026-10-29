@@ -191,7 +191,7 @@ public class Anderson implements Developer {
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=andynnnfw&show_icons=true&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa&text_color=c9d1d9&rank_icon=github" alt="GitHub Stats"/>
+  <img height="170" src="https://raw.githubusercontent.com/andynnnfw/andynnnfw/output/stats.svg" alt="GitHub Stats"/>
   <img height="170" src="https://streak-stats.demolab.com?user=andynnnfw&hide_border=true&background=0d1117&ring=a78bfa&fire=a78bfa&currStreakLabel=a78bfa&sideLabels=c9d1d9&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff" alt="GitHub Streak"/>
 </div>
 
