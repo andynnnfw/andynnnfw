@@ -161,13 +161,16 @@ public class Anderson implements Developer {
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>🔐 <a href="https://github.com/andynnnfw/SistemaLogin-PAM">Android Login App</a></h3>
-      <p>Android app with sign-up, login and a personalized home screen, including field validation, a “remember me” option and logout, with data stored locally using SharedPreferences.</p>
+      <h3>🎟️ <a href="https://github.com/andynnnfw/callwise-spring-boot">Callwise</a></h3>
+      <p>Queue management system with a <b>real-time display panel</b>: customers take a ticket at the kiosk, the attendant calls the next one and every panel updates instantly over <b>WebSocket</b>, with a sound alert. Priority queue rule, attendant login with Spring Security, 35 automated tests and deployed with Docker.</p>
       <p>
-        <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"/>
-        <img src="https://img.shields.io/badge/SharedPreferences-7c3aed?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Java_21-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+        <img src="https://img.shields.io/badge/WebSocket-7c3aed?style=flat-square"/>
+        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
       </p>
+      <p>🚀 <a href="https://callwise-4hun.onrender.com"><b>Live demo</b></a></p>
     </td>
   </tr>
   <tr>
