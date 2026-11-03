@@ -36,10 +36,163 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: gerar o card de ofensiva (streak)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
         run: |
-          URL="https://streak-stats.demolab.com?user=${{ github.repository_owner }}&hide_border=true&background=0d1117&ring=a78bfa&fire=a78bfa&currStreakLabel=a78bfa&sideLabels=c9d1d9&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff"
-          if ! curl -fsSL --retry 5 --retry-delay 10 --retry-all-errors --max-time 60 "$URL" -o dist/streak.svg; then
-            echo "site do streak fora do ar, mantendo o card anterior"
+          if ! python3 - dist/streak.svg <<'PY'
+          import datetime as dt
+          import json
+          import os
+          import sys
+          import urllib.request
+
+          LOGIN = os.environ.get("GH_LOGIN", "")
+          TOKEN = os.environ.get("GH_TOKEN", "")
+          OUT = sys.argv[1] if len(sys.argv) > 1 else "dist/streak.svg"
+
+          QUERY = """
+          query($login: String!, $from: DateTime!, $to: DateTime!) {
+            user(login: $login) {
+              contributionsCollection(from: $from, to: $to) {
+                contributionYears
+                contributionCalendar { weeks { contributionDays { date contributionCount } } }
+              }
+            }
+          }
+          """
+
+
+          def gql(variables):
+              req = urllib.request.Request(
+                  "https://api.github.com/graphql",
+                  data=json.dumps({"query": QUERY, "variables": variables}).encode(),
+                  headers={"Authorization": f"bearer {TOKEN}", "Content-Type": "application/json"},
+              )
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  data = json.load(r)
+              if "errors" in data:
+                  raise RuntimeError(data["errors"])
+              return data["data"]["user"]["contributionsCollection"]
+
+
+          def fetch_days():
+              now = dt.datetime.now(dt.timezone.utc)
+              first = gql({"login": LOGIN, "from": f"{now.year}-01-01T00:00:00Z", "to": now.strftime("%Y-%m-%dT%H:%M:%SZ")})
+              days = {}
+              for year in first["contributionYears"]:
+                  if year == now.year:
+                      coll = first
+                  else:
+                      coll = gql({"login": LOGIN, "from": f"{year}-01-01T00:00:00Z", "to": f"{year}-12-31T23:59:59Z"})
+                  for week in coll["contributionCalendar"]["weeks"]:
+                      for d in week["contributionDays"]:
+                          days[dt.date.fromisoformat(d["date"])] = d["contributionCount"]
+              today = now.date()
+              return {d: c for d, c in days.items() if d <= today}, today
+
+
+          def compute(days, today):
+              dates = sorted(days)
+              total = sum(days.values())
+              first_day = next((d for d in dates if days[d] > 0), today)
+
+              longest = (0, None, None)
+              run_start, run_len = None, 0
+              prev = None
+              for d in dates:
+                  if days[d] > 0:
+                      if prev is not None and run_len and (d - prev).days == 1:
+                          run_len += 1
+                      else:
+                          run_start, run_len = d, 1
+                      if run_len > longest[0]:
+                          longest = (run_len, run_start, d)
+                      prev = d
+                  else:
+                      run_len = 0
+                      prev = None
+
+              # current streak: today may still be empty without breaking the streak
+              day = today if days.get(today, 0) > 0 else today - dt.timedelta(days=1)
+              cur_end = day
+              cur_len = 0
+              while days.get(day, 0) > 0:
+                  cur_len += 1
+                  day -= dt.timedelta(days=1)
+              cur_start = day + dt.timedelta(days=1)
+              current = (cur_len, cur_start if cur_len else today, cur_end if cur_len else today)
+              return total, first_day, current, longest
+
+
+          def fmt(d, today, force_year=False):
+              s = f"{d.strftime('%b')} {d.day}"
+              if force_year or d.year != today.year:
+                  s += f", {d.year}"
+              return s
+
+
+          def rng(a, b, today):
+              if a is None:
+                  return ""
+              if a == b:
+                  return fmt(a, today)
+              return f"{fmt(a, today)} - {fmt(b, today)}"
+
+
+          def render(total, first_day, current, longest, today):
+              total_range = f"{fmt(first_day, today, force_year=True)} - Present"
+              cur_range = rng(current[1], current[2], today) if current[0] else fmt(today, today)
+              long_range = rng(longest[1], longest[2], today) if longest[0] else ""
+              font = "'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif"
+              return f"""<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" role="img" aria-label="Total contributions {total}, current streak {current[0]}, longest streak {longest[0]}">
+            <style>
+              .num {{ font: 700 28px {font}; fill: #ffffff; }}
+              .lbl {{ font: 400 14px {font}; fill: #c9d1d9; }}
+              .cur {{ font: 700 14px {font}; fill: #a78bfa; }}
+              .date {{ font: 400 12px {font}; fill: #8b949e; }}
+              .fade {{ opacity: 0; animation: fade 0.6s ease-in-out forwards; }}
+              @keyframes fade {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
+            </style>
+            <rect width="495" height="195" rx="4.5" fill="#0d1117"/>
+            <line x1="165" y1="28" x2="165" y2="170" stroke="#e4e2e2" stroke-opacity="0.6" stroke-width="1"/>
+            <line x1="330" y1="28" x2="330" y2="170" stroke="#e4e2e2" stroke-opacity="0.6" stroke-width="1"/>
+            <g text-anchor="middle">
+              <g class="fade" style="animation-delay:0.2s">
+                <text class="num" x="82.5" y="79">{total}</text>
+                <text class="lbl" x="82.5" y="115">Total Contributions</text>
+                <text class="date" x="82.5" y="145">{total_range}</text>
+              </g>
+              <circle cx="247.5" cy="71" r="40" fill="none" stroke="#a78bfa" stroke-width="5"/>
+              <rect x="232" y="22" width="31" height="18" fill="#0d1117"/>
+              <path transform="translate(237 17) scale(0.85)" fill="#a78bfa" d="M12.6 0.6C13.3 5 11.1 7.4 9.3 9.6 7.6 11.7 6 13.7 6 17.2 6 21.5 9 24 12.2 24 16.1 24 19 21.2 19 16.9 19 13.9 17.7 11.4 15.8 9.4 16.2 11.7 15.4 13.5 13.9 14.6 14.4 11.1 14.3 6.2 12.6 0.6Z"/>
+              <g class="fade" style="animation-delay:0.4s">
+                <text class="num" x="247.5" y="81">{current[0]}</text>
+              </g>
+              <g class="fade" style="animation-delay:0.6s">
+                <text class="cur" x="247.5" y="140">Current Streak</text>
+                <text class="date" x="247.5" y="165">{cur_range}</text>
+              </g>
+              <g class="fade" style="animation-delay:0.8s">
+                <text class="num" x="412.5" y="79">{longest[0]}</text>
+                <text class="lbl" x="412.5" y="115">Longest Streak</text>
+                <text class="date" x="412.5" y="145">{long_range}</text>
+              </g>
+            </g>
+          </svg>
+          """
+
+
+          if __name__ == "__main__":
+              days, today = fetch_days()
+              total, first_day, current, longest = compute(days, today)
+              os.makedirs(os.path.dirname(OUT) or ".", exist_ok=True)
+              with open(OUT, "w", encoding="utf-8") as f:
+                  f.write(render(total, first_day, current, longest, today))
+              print(f"total={total} current={current[0]} longest={longest[0]}")
+          PY
+          then
+            echo "nao foi possivel gerar o card de ofensiva, mantendo o anterior"
             curl -fsSL "https://raw.githubusercontent.com/${{ github.repository }}/output/streak.svg" -o dist/streak.svg || true
           fi
 
