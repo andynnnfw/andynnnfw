@@ -1,9 +1,9 @@
 name: generate snake and stats
 
 on:
-  # roda todo dia à meia-noite (horário de Brasília)
+  # roda a cada 6 horas
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "0 */6 * * *"
   # permite rodar manualmente pela aba Actions
   workflow_dispatch:
   # roda também sempre que você atualizar o repositório do perfil
@@ -34,6 +34,14 @@ jobs:
           options: "username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa&text_color=c9d1d9&rank_icon=github"
           path: dist/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: gerar o card de ofensiva (streak)
+        run: |
+          URL="https://streak-stats.demolab.com?user=${{ github.repository_owner }}&hide_border=true&background=0d1117&ring=a78bfa&fire=a78bfa&currStreakLabel=a78bfa&sideLabels=c9d1d9&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff"
+          if ! curl -fsSL --retry 5 --retry-delay 10 --retry-all-errors --max-time 60 "$URL" -o dist/streak.svg; then
+            echo "site do streak fora do ar, mantendo o card anterior"
+            curl -fsSL "https://raw.githubusercontent.com/${{ github.repository }}/output/streak.svg" -o dist/streak.svg || true
+          fi
 
       - name: publicar os SVGs na branch output
         uses: crazy-max/ghaction-github-pages@v4
