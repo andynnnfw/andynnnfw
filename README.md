@@ -195,7 +195,7 @@ public class Anderson implements Developer {
 
 <div align="center">
   <img height="170" src="https://raw.githubusercontent.com/andynnnfw/andynnnfw/output/stats.svg" alt="GitHub Stats"/>
-  <img height="170" src="https://streak-stats.demolab.com?user=andynnnfw&locale=en&hide_border=true&background=0d1117&ring=a78bfa&fire=a78bfa&currStreakLabel=a78bfa&sideLabels=c9d1d9&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff" alt="GitHub Streak"/>
+  <img height="170" src="https://raw.githubusercontent.com/andynnnfw/andynnnfw/output/streak.svg" alt="GitHub Streak"/>
 </div>
 
 <br/>
