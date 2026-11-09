@@ -45,9 +45,7 @@ jobs:
           import json
           import os
           import sys
-          import urllib.parse
           import urllib.request
-          from html.parser import HTMLParser
           from zoneinfo import ZoneInfo
 
           LOGIN = os.environ.get("GH_LOGIN", "")
@@ -80,70 +78,22 @@ jobs:
               return data["data"]["user"]["contributionsCollection"]
 
 
-          class CalendarParser(HTMLParser):
-              def __init__(self):
-                  super().__init__()
-                  self.cells, self.tips, self._tip = {}, {}, None
-
-              def handle_starttag(self, tag, attrs):
-                  a = dict(attrs)
-                  if tag == "td" and a.get("data-date") and a.get("id"):
-                      self.cells[a["id"]] = (a["data-date"], a.get("data-level", "0"))
-                  elif tag == "tool-tip" and a.get("for"):
-                      self._tip = a["for"]
-                      self.tips[self._tip] = ""
-
-              def handle_endtag(self, tag):
-                  if tag == "tool-tip":
-                      self._tip = None
-
-              def handle_data(self, data):
-                  if self._tip:
-                      self.tips[self._tip] += data
-
-
-          def fetch_calendar_page(query=""):
-              # GitHub draws this calendar in the time zone of the "tz" cookie
-              url = f"https://github.com/users/{LOGIN}/contributions{query}"
-              req = urllib.request.Request(url, headers={
-                  "Cookie": "tz=" + urllib.parse.quote(TZ, safe=""),
-                  "User-Agent": "Mozilla/5.0 (profile-streak-card)",
-              })
-              with urllib.request.urlopen(req, timeout=30) as r:
-                  html = r.read().decode("utf-8", "replace")
-              p = CalendarParser()
-              p.feed(html)
-              days = {}
-              for cid, (date, level) in p.cells.items():
-                  text = p.tips.get(cid, "").strip()
-                  first = text.split(" ")[0] if text else ""
-                  count = int(first.replace(",", "")) if first.replace(",", "").isdigit() else 0
-                  if count == 0 and level != "0" and not text:
-                      count = 1
-                  days[dt.date.fromisoformat(date)] = count
-              if not days:
-                  raise RuntimeError("calendar page returned no days")
-              return days
+          def iso_local(d, end=False):
+              t = dt.datetime.combine(d, dt.time(23, 59, 59) if end else dt.time(0, 0, 0), ZoneInfo(TZ))
+              return t.isoformat()
 
 
           def fetch_days():
-              now_utc = dt.datetime.now(dt.timezone.utc)
               today = dt.datetime.now(ZoneInfo(TZ)).date()
-              # 1) full history from the API (UTC days), used for old years
-              first = gql({"login": LOGIN, "from": f"{now_utc.year}-01-01T00:00:00Z", "to": now_utc.strftime("%Y-%m-%dT%H:%M:%SZ")})
+              # dates sent with the -03:00 offset so GitHub groups days in local time
+              first = gql({"login": LOGIN, "from": iso_local(dt.date(today.year, 1, 1)), "to": dt.datetime.now(ZoneInfo(TZ)).replace(microsecond=0).isoformat()})
               days = {}
-              years = sorted(first["contributionYears"])
-              for year in years:
-                  coll = first if year == now_utc.year else gql({"login": LOGIN, "from": f"{year}-01-01T00:00:00Z", "to": f"{year}-12-31T23:59:59Z"})
+              for year in sorted(first["contributionYears"]):
+                  coll = first if year == today.year else gql({"login": LOGIN, "from": iso_local(dt.date(year, 1, 1)), "to": iso_local(dt.date(year, 12, 31), end=True)})
                   for week in coll["contributionCalendar"]["weeks"]:
                       for d in week["contributionDays"]:
                           days[dt.date.fromisoformat(d["date"])] = d["contributionCount"]
-              # 2) same days in the local time zone (what the profile graph shows)
-              for query in [f"?from={y}-01-01&to={y}-12-31" for y in years] + [""]:
-                  try:
-                      days.update(fetch_calendar_page(query))
-                  except Exception as e:
-                      print(f"calendar page {query or 'default'} failed: {e}")
+              print("last days:", {str(d): days.get(d) for d in sorted(days)[-6:]})
               return {d: c for d, c in days.items() if d <= today}, today
 
 
