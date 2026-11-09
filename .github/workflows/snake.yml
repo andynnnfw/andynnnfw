@@ -37,7 +37,7 @@ jobs:
 
       - name: gerar o card de ofensiva (streak)
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.STREAK_TOKEN || secrets.GITHUB_TOKEN }}
           GH_LOGIN: ${{ github.repository_owner }}
         run: |
           if ! python3 - dist/streak.svg <<'PY'
