@@ -104,15 +104,6 @@ jobs:
               return dt.datetime.fromisoformat(s.replace("Z", "+00:00"))
 
 
-          def move(days, ts):
-              # move one contribution from its UTC day to its local (Brasilia) day; totals never change
-              utc_day = ts.astimezone(dt.timezone.utc).date()
-              local_day = ts.astimezone(ZoneInfo(TZ)).date()
-              if utc_day != local_day and days.get(utc_day, 0) > 0:
-                  days[utc_day] -= 1
-                  days[local_day] = days.get(local_day, 0) + 1
-
-
           def commit_times(owner, name, author, since, until):
               times, after = [], None
               for _ in range(10):
@@ -128,29 +119,17 @@ jobs:
               return times
 
 
-          def localize_year(days, user_id, coll, since, until):
-              # issues, pull requests, reviews and new repositories have exact timestamps
+          def local_times(user_id, coll, since, until):
+              # exact time of each contribution, to know on which Brasilia day it happened
+              times = []
               for key in ("issueContributions", "pullRequestContributions", "pullRequestReviewContributions", "repositoryContributions"):
-                  for n in coll[key]["nodes"]:
-                      move(days, parse_ts(n["occurredAt"]))
-              # commits: only move a day when the commit times match the count GitHub used for it
+                  times += [parse_ts(n["occurredAt"]) for n in coll[key]["nodes"]]
               for repo in coll["commitContributionsByRepository"]:
-                  counted = {}
-                  for n in repo["contributions"]["nodes"]:
-                      d = parse_ts(n["occurredAt"]).astimezone(dt.timezone.utc).date()
-                      counted[d] = counted.get(d, 0) + n["commitCount"]
                   try:
-                      times = commit_times(repo["repository"]["owner"]["login"], repo["repository"]["name"], user_id, since, until)
+                      times += commit_times(repo["repository"]["owner"]["login"], repo["repository"]["name"], user_id, since, until)
                   except Exception as e:
                       print("skip repo", repo["repository"]["name"], e)
-                      continue
-                  by_day = {}
-                  for t in times:
-                      by_day.setdefault(t.astimezone(dt.timezone.utc).date(), []).append(t)
-                  for d, ts in by_day.items():
-                      if counted.get(d) == len(ts):
-                          for t in ts:
-                              move(days, t)
+              return times
 
 
           def fetch_days():
@@ -167,43 +146,43 @@ jobs:
                       for d in week["contributionDays"]:
                           days[dt.date.fromisoformat(d["date"])] = d["contributionCount"]
                   colls.append((coll, since, until))
-              total_before = sum(days.values())
+              days = {d: c for d, c in days.items() if d <= today}
+              total = sum(days.values())
+              # a day is active if it had contributions in UTC (GitHub API) or in Brasilia time
+              active = {d for d, c in days.items() if c > 0}
               for coll, since, until in colls:
                   try:
-                      localize_year(days, user_id, coll, since, until)
+                      times = local_times(user_id, coll, since, until)
+                      print("recent:", sorted(t.isoformat() for t in times if t > now_utc - dt.timedelta(days=4)))
+                      for t in times:
+                          ld = t.astimezone(ZoneInfo(TZ)).date()
+                          if ld <= today:
+                              active.add(ld)
                   except Exception as e:
-                      print("could not move contributions to local days:", e)
-              print("total", total_before, "->", sum(days.values()))
-              print("last days:", {str(d): days.get(d) for d in sorted(days)[-6:]})
-              return {d: c for d, c in days.items() if d <= today}, today
+                      print("could not read local times:", e)
+              print("active last days:", sorted(str(d) for d in active)[-6:])
+              return active, today, total
 
 
-          def compute(days, today):
-              dates = sorted(days)
-              total = sum(days.values())
-              first_day = next((d for d in dates if days[d] > 0), today)
+          def compute(active, today, total):
+              dates = sorted(active)
+              first_day = dates[0] if dates else today
 
               longest = (0, None, None)
-              run_start, run_len = None, 0
-              prev = None
+              run_start, run_len, prev = None, 0, None
               for d in dates:
-                  if days[d] > 0:
-                      if prev is not None and run_len and (d - prev).days == 1:
-                          run_len += 1
-                      else:
-                          run_start, run_len = d, 1
-                      if run_len > longest[0]:
-                          longest = (run_len, run_start, d)
-                      prev = d
+                  if prev is not None and (d - prev).days == 1:
+                      run_len += 1
                   else:
-                      run_len = 0
-                      prev = None
+                      run_start, run_len = d, 1
+                  if run_len > longest[0]:
+                      longest = (run_len, run_start, d)
+                  prev = d
 
               # current streak: today may still be empty without breaking the streak
-              day = today if days.get(today, 0) > 0 else today - dt.timedelta(days=1)
-              cur_end = day
-              cur_len = 0
-              while days.get(day, 0) > 0:
+              day = today if today in active else today - dt.timedelta(days=1)
+              cur_end, cur_len = day, 0
+              while day in active:
                   cur_len += 1
                   day -= dt.timedelta(days=1)
               cur_start = day + dt.timedelta(days=1)
@@ -270,8 +249,8 @@ jobs:
 
 
           if __name__ == "__main__":
-              days, today = fetch_days()
-              total, first_day, current, longest = compute(days, today)
+              active, today, total = fetch_days()
+              total, first_day, current, longest = compute(active, today, total)
               os.makedirs(os.path.dirname(OUT) or ".", exist_ok=True)
               with open(OUT, "w", encoding="utf-8") as f:
                   f.write(render(total, first_day, current, longest, today))
