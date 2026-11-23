@@ -15,7 +15,7 @@
 
 <h2 align="center">👨‍💻 About me</h2>
 
-<p align="center">
+<p align="justify">
   Hi! I'm <b>Anderson Melo</b>, a Systems Development student at <b>Etec Uirapuru</b> (Centro Paula Souza) and an aspiring <b>Java back-end developer</b> from São Paulo, Brazil. I build <b>REST APIs with Spring Boot</b>, secured with <b>Spring Security + JWT</b>, backed by <b>PostgreSQL and MySQL</b>, covered by automated tests and deployed with <b>Docker</b>. I recently completed the 🏅 <b>CI&amp;T – Java AI Copilot Bootcamp</b> at <a href="https://www.dio.me/"><b>DIO</b></a>, where I applied GoF design patterns with Spring and built a <b>voice-controlled API with Spring AI</b>. I ship <b>a new portfolio project every month</b> and I'm looking for my <b>first opportunity as an intern or junior developer</b>.
 </p>
 
@@ -38,7 +38,7 @@
   <tr>
     <td align="center" width="33%">
       🎓<br/><b>Education</b><br/>
-      Systems Development @ Etec Uirapuru<br/>Centro Paula Souza <i>(2027)</i>
+      Systems Development<br/>Etec Uirapuru <i>(2027)</i>
     </td>
     <td align="center" width="33%">
       📍<br/><b>Location</b><br/>
