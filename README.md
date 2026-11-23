@@ -19,38 +19,12 @@
   Hi! I'm <b>Anderson Melo</b>, a Systems Development student at <b>Etec Uirapuru</b> (Centro Paula Souza) and an aspiring <b>Java back-end developer</b> from São Paulo, Brazil. I build <b>REST APIs with Spring Boot</b>, secured with <b>Spring Security + JWT</b>, backed by <b>PostgreSQL and MySQL</b>, covered by automated tests and deployed with <b>Docker</b>. I recently completed the 🏅 <b>CI&amp;T – Java AI Copilot Bootcamp</b> at <a href="https://www.dio.me/"><b>DIO</b></a>, where I applied GoF design patterns with Spring and built a <b>voice-controlled API with Spring AI</b>. I ship <b>a new portfolio project every month</b> and I'm looking for my <b>first opportunity as an intern or junior developer</b>.
 </p>
 
-<div align="center">
-<table>
-  <tr>
-    <td align="center" width="33%">
-      🔭<br/><b>Currently</b><br/>
-      Building REST APIs with<br/>Spring Boot + PostgreSQL
-    </td>
-    <td align="center" width="33%">
-      🏅<br/><b>Certified</b><br/>
-      CI&amp;T Java AI Copilot<br/>Bootcamp (DIO) ✅ <i>Nov 2026</i>
-    </td>
-    <td align="center" width="33%">
-      🌱<br/><b>Learning</b><br/>
-      Spring AI, Design Patterns<br/>and Advanced English
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="33%">
-      🎓<br/><b>Education</b><br/>
-      Systems Development<br/>Etec Uirapuru <i>(2027)</i>
-    </td>
-    <td align="center" width="33%">
-      📍<br/><b>Location</b><br/>
-      São Paulo, Brazil
-    </td>
-    <td align="center" width="33%">
-      💼<br/><b>Looking for</b><br/>
-      My first opportunity:<br/><b>Internship or Junior Developer</b>
-    </td>
-  </tr>
-</table>
-</div>
+- 🔭 Currently building **REST APIs with Spring Boot + PostgreSQL**
+- 🏅 Certified in the **CI&T – Java AI Copilot Bootcamp** by [DIO](https://www.dio.me/) — *Nov 2026*
+- 🌱 Learning **Spring AI, Design Patterns and Advanced English**
+- 🎓 Studying **Systems Development** at **Etec Uirapuru** — Centro Paula Souza *(2027)*
+- 📍 Based in **São Paulo, Brazil**
+- 💼 Looking for my **first opportunity as an Intern or Junior Developer**
 
 <details>
 <summary><b>☕ Prefer reading it in Java? Click here</b></summary>
