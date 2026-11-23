@@ -2,19 +2,26 @@
 
 <img src="assets/header.svg" width="100%" alt="Anderson Melo — IT Student and aspiring Java back-end developer"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=A78BFA&center=true&vCenter=true&width=620&lines=Aspiring+Java+Back-end+Developer;Building+REST+APIs+with+Spring+Boot;A+new+portfolio+project+every+month;Open+to+internships+and+junior+roles" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=A78BFA&center=true&vCenter=true&width=620&lines=Aspiring+Java+Back-end+Developer;Building+REST+APIs+with+Spring+Boot;Integrating+AI+into+APIs+with+Spring+AI;A+new+portfolio+project+every+month;Open+to+internships+and+junior+roles" alt="Typing SVG"/>
 
 <p>
   <a href="https://www.linkedin.com/in/andynnnfw/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:and345melo@gmail.com"><img src="https://img.shields.io/badge/E--mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail"/></a>
   <img src="https://img.shields.io/badge/Open%20to-Internship%20%7C%20Junior-22c55e?style=for-the-badge" alt="Open to internship or junior roles"/>
+  <img src="https://img.shields.io/badge/DIO-CI%26T%20Java%20AI%20Copilot%20Bootcamp%20%E2%9C%93-E4105D?style=for-the-badge" alt="CI&T Java AI Copilot Bootcamp completed at DIO"/>
 </p>
 
 </div>
 
 ## 👨‍💻 About me
 
-I'm an IT student at **Etec Uirapuru** (Centro Paula Souza) and an aspiring back-end developer focused on **Java, Spring Boot and relational databases**. I learn best by building real projects — from desktop to mobile, from REST APIs to browser extensions.
+Hi! I'm **Anderson Melo**, a Systems Development student at **Etec Uirapuru** (Centro Paula Souza) and an aspiring **Java back-end developer** from São Paulo, Brazil.
+
+I build **REST APIs with Spring Boot**: I secure them with **Spring Security + JWT**, store data in **PostgreSQL and MySQL**, write automated tests and deploy with **Docker**. Lately I've been adding **AI to back-end services with Spring AI**.
+
+🏅 I recently completed the **CI&T – Java AI Copilot Bootcamp** at **[DIO](https://www.dio.me/)**. During the bootcamp I applied **GoF design patterns** with Spring and built a **voice-controlled API** that uses speech-to-text and LLM tool calling.
+
+I learn by building. I challenge myself to ship **a new portfolio project every month**, and I'm looking for my **first opportunity as an intern or junior developer**, on a team where I can learn fast and contribute from day one.
 
 <table>
   <tr>
@@ -22,12 +29,16 @@ I'm an IT student at **Etec Uirapuru** (Centro Paula Souza) and an aspiring back
     <td>Building REST APIs with Spring Boot + PostgreSQL</td>
   </tr>
   <tr>
+    <td>🏅 <b>Certified</b></td>
+    <td>CI&amp;T Bootcamp – Java AI Copilot (DIO) ✅ <i>Nov 2026</i></td>
+  </tr>
+  <tr>
     <td>🌱 <b>Learning</b></td>
-    <td>CI&amp;T Bootcamp – Java AI Copilot (DIO)</td>
+    <td>Spring AI, software design patterns and Advanced English</td>
   </tr>
   <tr>
     <td>🎓 <b>Education</b></td>
-    <td>IT Student @ Etec Uirapuru — Centro Paula Souza</td>
+    <td>Systems Development Technician @ Etec Uirapuru — Centro Paula Souza <i>(2027)</i></td>
   </tr>
   <tr>
     <td>📍 <b>Location</b></td>
@@ -52,12 +63,17 @@ public class Anderson implements Developer {
 
     @Override
     public List<String> stack() {
-        return List.of("Java", "Spring Boot", "PostgreSQL", "MySQL", "PHP");
+        return List.of("Java", "Spring Boot", "Spring AI", "PostgreSQL", "MySQL", "Docker", "PHP");
+    }
+
+    @Override
+    public List<String> certifications() {
+        return List.of("CI&T Bootcamp – Java AI Copilot (DIO) ✅");
     }
 
     @Override
     public List<String> learning() {
-        return List.of("REST APIs", "AI-assisted development", "Advanced English");
+        return List.of("Spring AI", "Design Patterns", "Advanced English");
     }
 
     @Override
@@ -71,7 +87,8 @@ public class Anderson implements Developer {
 
 ## 🎯 What I bring to the team
 
-- 🧱 **Hands-on Java & OOP fundamentals** — projects organized in layers (`model`, `view`, `util`)
+- 🧱 **Hands-on Java & OOP fundamentals** — projects organized in layers and built on design patterns (Singleton, Strategy, Facade)
+- 🧠 **AI-powered back-end** — I built a voice-controlled API with Spring AI, speech-to-text and LLM tool calling
 - 🌿 **Git as a daily habit** — feature branches (`feat/...`) and a clean history
 - 🔁 **Consistency** — personal challenge to ship **a new portfolio project every month**
 - 🤖 **AI as a tool, not a crutch** — I write my own code and use AI to review it and move faster
@@ -139,26 +156,30 @@ public class Anderson implements Developer {
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>🔤 <a href="https://github.com/andynnnfw/wordframe-chrome-extension">Wordframe</a></h3>
-      <p>Chrome extension that translates English words and phrases right on the page with a keyboard shortcut, saves vocabulary as flashcards and records video clips for study.</p>
+      <h3>🎙️ <a href="https://github.com/andynnnfw/dio-cit-spring-ai-voice-budget">Voice Budget API</a></h3>
+      <p>Personal budget API you control <b>with your voice</b>: send an audio like <i>"I spent 40 reais on pizza yesterday"</i> and the API transcribes it, understands the intent, saves the expense in the right category and answers back. Powered by <b>speech-to-text</b> and <b>LLM tool calling</b> with Spring AI.</p>
       <p>
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-        <img src="https://img.shields.io/badge/Chrome_Extension-4285F4?style=flat-square&logo=googlechrome&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Manifest_V3-7c3aed?style=flat-square"/>
-        <img src="https://img.shields.io/badge/MediaRecorder_API-7c3aed?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Java_21-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Spring_AI-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Groq-F55036?style=flat-square"/>
+        <img src="https://img.shields.io/badge/H2-1F6FEB?style=flat-square"/>
       </p>
+      <p>🏅 <i>Final project of the CI&amp;T – Java AI Copilot Bootcamp (DIO)</i></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>📦 <a href="https://github.com/andynnnfw/product-registration-dashboard-PHP">Product Registration Dashboard</a></h3>
-      <p>Dark-themed dashboard for registering products with multiple image uploads, live thumbnail previews and a dynamic gallery rendered from the database. Uses PDO prepared statements to prevent SQL injection.</p>
+      <h3>🧩 <a href="https://github.com/andynnnfw/dio-cit-design-patterns-spring">Design Patterns with Spring</a></h3>
+      <p>Customer registration REST API with <b>automatic address lookup by ZIP code</b> (ViaCEP), built to apply the <b>Singleton</b>, <b>Strategy</b> and <b>Facade</b> patterns in practice with Spring Boot, OpenFeign and global exception handling.</p>
       <p>
-        <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
-        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-        <img src="https://img.shields.io/badge/PDO-7c3aed?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+        <img src="https://img.shields.io/badge/OpenFeign-7c3aed?style=flat-square"/>
+        <img src="https://img.shields.io/badge/ViaCEP-7c3aed?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Design_Patterns-7c3aed?style=flat-square"/>
       </p>
+      <p>🏅 <i>Built during the CI&amp;T – Java AI Copilot Bootcamp (DIO)</i></p>
     </td>
     <td width="50%" valign="top">
       <h3>🎟️ <a href="https://github.com/andynnnfw/callwise-spring-boot">Callwise</a></h3>
@@ -171,6 +192,28 @@ public class Anderson implements Developer {
         <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
       </p>
       <p>🚀 <a href="https://callwise-4hun.onrender.com"><b>Live demo</b></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔤 <a href="https://github.com/andynnnfw/wordframe-chrome-extension">Wordframe</a></h3>
+      <p>Chrome extension that translates English words and phrases right on the page with a keyboard shortcut, saves vocabulary as flashcards and records video clips for study.</p>
+      <p>
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Chrome_Extension-4285F4?style=flat-square&logo=googlechrome&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Manifest_V3-7c3aed?style=flat-square"/>
+        <img src="https://img.shields.io/badge/MediaRecorder_API-7c3aed?style=flat-square"/>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📦 <a href="https://github.com/andynnnfw/product-registration-dashboard-PHP">Product Registration Dashboard</a></h3>
+      <p>Dark-themed dashboard for registering products with multiple image uploads, live thumbnail previews and a dynamic gallery rendered from the database. Uses PDO prepared statements to prevent SQL injection.</p>
+      <p>
+        <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
+        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+        <img src="https://img.shields.io/badge/PDO-7c3aed?style=flat-square"/>
+      </p>
     </td>
   </tr>
   <tr>
