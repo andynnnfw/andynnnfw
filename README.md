@@ -13,42 +13,44 @@
 
 </div>
 
-## 👨‍💻 About me
+<h2 align="center">👨‍💻 About me</h2>
 
-Hi! I'm **Anderson Melo**, a Systems Development student at **Etec Uirapuru** (Centro Paula Souza) and an aspiring **Java back-end developer** from São Paulo, Brazil.
+<p align="center">
+  Hi! I'm <b>Anderson Melo</b>, a Systems Development student at <b>Etec Uirapuru</b> (Centro Paula Souza) and an aspiring <b>Java back-end developer</b> from São Paulo, Brazil. I build <b>REST APIs with Spring Boot</b>, secured with <b>Spring Security + JWT</b>, backed by <b>PostgreSQL and MySQL</b>, covered by automated tests and deployed with <b>Docker</b>. I recently completed the 🏅 <b>CI&amp;T – Java AI Copilot Bootcamp</b> at <a href="https://www.dio.me/"><b>DIO</b></a>, where I applied GoF design patterns with Spring and built a <b>voice-controlled API with Spring AI</b>. I ship <b>a new portfolio project every month</b> and I'm looking for my <b>first opportunity as an intern or junior developer</b>.
+</p>
 
-I build **REST APIs with Spring Boot**: I secure them with **Spring Security + JWT**, store data in **PostgreSQL and MySQL**, write automated tests and deploy with **Docker**. Lately I've been adding **AI to back-end services with Spring AI**.
-
-🏅 I recently completed the **CI&T – Java AI Copilot Bootcamp** at **[DIO](https://www.dio.me/)**. During the bootcamp I applied **GoF design patterns** with Spring and built a **voice-controlled API** that uses speech-to-text and LLM tool calling.
-
-I learn by building. I challenge myself to ship **a new portfolio project every month**, and I'm looking for my **first opportunity as an intern or junior developer**, on a team where I can learn fast and contribute from day one.
-
+<div align="center">
 <table>
   <tr>
-    <td>🔭 <b>Currently</b></td>
-    <td>Building REST APIs with Spring Boot + PostgreSQL</td>
+    <td align="center" width="33%">
+      🔭<br/><b>Currently</b><br/>
+      Building REST APIs with<br/>Spring Boot + PostgreSQL
+    </td>
+    <td align="center" width="33%">
+      🏅<br/><b>Certified</b><br/>
+      CI&amp;T Java AI Copilot<br/>Bootcamp (DIO) ✅ <i>Nov 2026</i>
+    </td>
+    <td align="center" width="33%">
+      🌱<br/><b>Learning</b><br/>
+      Spring AI, Design Patterns<br/>and Advanced English
+    </td>
   </tr>
   <tr>
-    <td>🏅 <b>Certified</b></td>
-    <td>CI&amp;T Bootcamp – Java AI Copilot (DIO) ✅ <i>Nov 2026</i></td>
-  </tr>
-  <tr>
-    <td>🌱 <b>Learning</b></td>
-    <td>Spring AI, software design patterns and Advanced English</td>
-  </tr>
-  <tr>
-    <td>🎓 <b>Education</b></td>
-    <td>Systems Development Technician @ Etec Uirapuru — Centro Paula Souza <i>(2027)</i></td>
-  </tr>
-  <tr>
-    <td>📍 <b>Location</b></td>
-    <td>São Paulo, Brazil</td>
-  </tr>
-  <tr>
-    <td>💼 <b>Looking for</b></td>
-    <td>My first opportunity: <b>Internship or Junior Developer</b></td>
+    <td align="center" width="33%">
+      🎓<br/><b>Education</b><br/>
+      Systems Development @ Etec Uirapuru<br/>Centro Paula Souza <i>(2027)</i>
+    </td>
+    <td align="center" width="33%">
+      📍<br/><b>Location</b><br/>
+      São Paulo, Brazil
+    </td>
+    <td align="center" width="33%">
+      💼<br/><b>Looking for</b><br/>
+      My first opportunity:<br/><b>Internship or Junior Developer</b>
+    </td>
   </tr>
 </table>
+</div>
 
 <details>
 <summary><b>☕ Prefer reading it in Java? Click here</b></summary>
